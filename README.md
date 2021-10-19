@@ -1,4 +1,4 @@
-# U.S.A. Covid-19 Data: Clean, Easy-to-use Data from the 50 States (Updated Weekly on Sundays)
+# U.S.A. Covid-19 Data: Clean, easy-to-use data from the 50 states (Updated Weekly on Sundays)
 
 A number of sources across the internet provide regularly-updated counts of COVID-19 cases (positive tests) and deaths reported within each of the 50 U.S. States. However, despite the significant public interest in these data, they often contain clear systematic and/or idiosyncratic reporting errors. In addition, I find that the long panel-data format typically provided can be cumbersome to work with.
 
@@ -7,6 +7,8 @@ Here I have attempted to provide several clean, easy-to-use data files describin
 * covid-19 attributable deaths
 * persons vaccinated (first dose, as a proportion of state population)
 * prevalence of the delta variant in each state
+
+Each dataset will be a *Jx50* array of numbers, where *J* is the number of weeks since January 27, 2020 (inclusive). Rows index over weeks and columns index over states.
 
 To load each data file, you should use this ```R``` command, with ```XXX_XXX``` replaced by a specific file/variable name:
 ```
