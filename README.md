@@ -1,4 +1,4 @@
-# U.S.A. Covid-19 Data: Clean, Easy-to-use Data from the U.S.A. COVID-19 Epidemic - Updated Weekly on Sundays
+# U.S.A. Covid-19 Data: Clean, Easy-to-use Data from the U.S.A. COVID-19 Epidemic (Updated Weekly on Sundays)
 
 A number of sources across the internet provide regularly-updated counts of COVID-19 cases (positive tests) and deaths reported within each of the 50 U.S. States. However, despite the significant public interest in these data, they often contain clear systematic and/or idiosyncratic reporting errors. In addition, I find that the long panel-data format typically provided can be cumbersome to work with.
 
