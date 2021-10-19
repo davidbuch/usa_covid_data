@@ -1,6 +1,6 @@
 # U.S.A. Covid-19 Data: Clean, easy-to-use data from the 50 states (Updated Weekly on Sundays)
 
-A number of sources across the internet provide regularly-updated counts of COVID-19 cases (positive tests) and deaths reported within each of the 50 U.S. States. However, despite the significant public interest in these data, they often contain clear systematic and/or idiosyncratic reporting errors. In addition, I find that the long panel-data format typically provided can be cumbersome to work with.
+A number of sources across the internet provide regularly-updated counts of COVID-19 cases (a.k.a positive tests) and deaths reported within each of the 50 U.S. States. However, despite the significant public interest in these data, they often contain clear systematic and/or idiosyncratic reporting errors. In addition, I find that the long panel-data format typically provided can be cumbersome to work with.
 
 Here I have attempted to provide several clean, easy-to-use data files describing the COVID-19 epidemic in the United States. These include information on:
 * covid-19 cases (positive tests)
