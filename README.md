@@ -14,7 +14,7 @@ To load each data file, you should use this ```R``` command, with ```XXX_XXX``` 
 ```
 XXX_XXX <- read.csv("XXX_XXX.csv", row.names = 1, check.names = FALSE)
 ```
-or, in Python:
+or, in ```Python```:
 ```
 import pandas as pd
 XXX_XXX = pd.read_csv("XXX_XXX.csv", index_col=0)
