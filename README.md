@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A number of sources across the internet provide regularly-updated counts of COVID-19 cases (a.k.a positive tests) and deaths reported within each of the 50 U.S. States. However, despite the significant public interest in these data, they often contain clear systematic and/or idiosyncratic reporting errors.
+A number of sources across the internet provide regularly-updated counts of new COVID-19 cases (a.k.a positive tests) and new deaths reported within each of the 50 U.S. States. However, despite significant public interest in these data, they apparently contain systematic and/or idiosyncratic reporting errors.
 
 Here I have attempted to provide several clean, easy-to-use data files describing the COVID-19 epidemic in the United States. These include information on:
 * covid-19 cases (a.k.a. positive tests)
@@ -13,7 +13,7 @@ Here I have attempted to provide several clean, easy-to-use data files describin
 
 Each temporal dataset is a *Jx50* array of numbers, where *J* is the number of weeks since January 27, 2020 (inclusive). Rows index over weeks and columns index over States. For users who prefer the tidy data formatting convention, the columns must be stacked using standard reshaping functions available in Python's ``pandas`` package or R's ```tidyverse``` package.
 
-I have aggregated all data to weekly summaries, since (1) daily data often appear to be subject to reporting cycles, and (2) the intensity of the day-of-the-week effect on reporting seems to vary across locations and over time. I have also attempted to smooth out any extreme and apparently erroneous outliers which were prevalent in case, death, and vaccination data. To make these adjustments transparent and reproducible, this repository loosely conforms with the TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/). Specifically, this means I adopt a specific file structure and include all raw data and processing scripts in designated folders. If you have any questions about the data, its provenance, or the processing scripts, please don't hesitate to reach out to me on github.
+I have aggregated all data to weekly summaries, since (1) daily data often appear to be subject to reporting cycles, and (2) the intensity of the day-of-the-week effect on reporting seems to vary across locations and over time. I have also attempted to smooth out any extreme and apparently erroneous outliers which were prevalent in case, death, and vaccination data. To make these adjustments transparent and reproducible, this repository loosely conforms with the TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/). Specifically, this means I adopt a specific file structure, provide certain forms of documentation, and include all raw data and processing scripts in designated folders. If you have any questions about the data, its provenance, or the processing scripts, please don't hesitate to reach out to me on github.
 
 ## Using the Cleaned and Formatted Data
 
