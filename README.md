@@ -89,9 +89,9 @@ usa_covid_data:
   * RawData/
     * Raw Data Files [may include simulated data, or data you've collected]
     * Metadata/
-      * Data Sources Guide
-        * For existing data,: bib citation, instructions to obtain, note on the avialability of a code book
-        * For generated data: note on construction, avail of codebook
+      * data_sources_guide.md
+        * For existing data: bib citation, instructions to obtain, note on the avialability of a code book
+        * For generated data: note on construction, availability of codebook
       * Codebook1
       * Codebook2
       * ...
@@ -105,7 +105,7 @@ usa_covid_data:
 
 ### 3. Instructions for reproducing the cleaned data
 
-Run "Scripts/MasterScript.R". This will call data cleaning scripts inside the Scripts/ProcessingScripts/ directory, which load data from the Data/RawData/ directory and then save the cleaned data in Data/CleanData.
+Once the R program and all necessary add-on pacakges are installed, run "scripts/master_script.R" with an R interpreter. This will call data cleaning R scripts inside the "scripts/processing_scripts/" directory, which load data from the "data/raw_data/" directory and then save the cleaned data in "data/clean_data/".
 
 ## License
 
