@@ -1,4 +1,4 @@
-# U.S.A. Covid-19 Data: Clean, easy-to-use data from the 50 States (Updated Weekly on Sundays)
+# U.S.A. Covid-19 Data: Clean, easy-to-use data from the 50 States
 
 ## Project Description
 
@@ -7,10 +7,11 @@ A number of sources across the internet provide regularly-updated counts of COVI
 Here I have attempted to provide several clean, easy-to-use data files describing the COVID-19 epidemic in the United States. These include information on:
 * covid-19 cases (a.k.a. positive tests)
 * covid-19 attributable deaths
-* persons vaccinated (first dose, as a proportion of state population)
-* prevalence of the delta variant of covid-19 in each state
+* persons vaccinated (first dose, as a proportion of State population)
+* prevalence of the delta variant of covid-19 in each State
+* estimated infection fatality rate (and confidence band) for each State, determined based on demographic composition of each state by age [not a temporal dataset]
 
-Each dataset is a *Jx50* array of numbers, where *J* is the number of weeks since January 27, 2020 (inclusive). Rows index over weeks and columns index over States. For users who prefer the tidy data formatting convention, the columns must be stacked using standard reshaping functions available in Python's ``pandas`` package or R's ```tidyverse``` package.
+Each temporal dataset is a *Jx50* array of numbers, where *J* is the number of weeks since January 27, 2020 (inclusive). Rows index over weeks and columns index over States. For users who prefer the tidy data formatting convention, the columns must be stacked using standard reshaping functions available in Python's ``pandas`` package or R's ```tidyverse``` package.
 
 I have aggregated all data to weekly summaries, since (1) daily data often appear to be subject to reporting cycles, and (2) the intensity of the day-of-the-week effect on reporting seems to vary across locations and over time. I have also attempted to smooth out any extreme and apparently erroneous outliers which were prevalent in case, death, and vaccination data. To make these adjustments transparent and reproducible, this repository loosely conforms with the TIER Protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/). Specifically, this means I adopt a specific file structure and include all raw data and processing scripts in designated folders. If you have any questions about the data, its provenance, or the processing scripts, please don't hesitate to reach out to me on github.
 
@@ -63,10 +64,11 @@ covid_deaths.plot(legend = None)
 
 ## Raw Data Sources
 
-1. Cases and Deaths - NYT COVID-19 GitHub Repository
-2. U.S. State Populations (total and by age) - U.S. Census Bureau
-3. U.S. State Vaccinations - Our World in Data
-4. COVID-19 Delta Variant Prevalence - U.S. CDC, U.S. Department of Health and Human Services
+See "data/raw_data/metadata/data_sources_guide.md" for complete information.
+
+## Clean Data Files
+
+See "data/clean_data/data_appendix.md" for complete information.
 
 ## Reproducing the Cleaned Data
 
@@ -78,7 +80,8 @@ The processing scripts are written in the R statistical programming language, an
 
 The scripts make use of certain R add-on packages, available in the CRAN repository:
 
-* 
+* lubridate
+* readxl
 
 ### 2. Map of documentation
 
