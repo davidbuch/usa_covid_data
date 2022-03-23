@@ -14,9 +14,9 @@ As of March 22, 2022, the datafile and file layout information are available to 
 
 This file was obtained from the ```covid-19-data``` repository published by Our World in Data. As of March 22, 2022, the repository was hosted at [https://github.com/owid/covid-19-data]. As of the same date, the data could be downloaded by following the link [https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/us_state_vaccinations.csv] and clicking the "Download" button on that page. Documentation for the data is also available in this repository, at [https://github.com/owid/covid-19-data/blob/master/public/data/README.md].
 
-## 4. 0-Datatable export.csv
+## 4. 0-Datatable export.xlsx
 
-This file contains temporal data about the relative prevalence of COVID-19 variants of concern. The data are downloaded from the CDC COVID Data Tracker. As of March 22, 2022, this data could be downloaded using a Tableau app displayed at the web address [https://covid.cdc.gov/covid-data-tracker/#variant-proportions]. To download the data, after following that link, scroll to the bottom of the **first** Tableau app on the page and click the "download" icon (a wide rectangle with an arrow emanating from the center pointing downward). Then, on the pop up display, click "Crosstab", select sheet "0-Datatable export", select format "CSV", and then click "Download".
+This file contains temporal data about the relative prevalence of COVID-19 variants of concern. The data are downloaded from the CDC COVID Data Tracker. As of March 22, 2022, this data could be downloaded using a Tableau app displayed at the web address [https://covid.cdc.gov/covid-data-tracker/#variant-proportions]. To download the data, after following that link, scroll to the bottom of the **first** Tableau app on the page and click the "download" icon (a wide rectangle with an arrow emanating from the center pointing downward). Then, on the pop up display, click "Crosstab", select sheet "0-Datatable export", select format "xlsx", and then click "Download".
 
 ## 5. hhs_region.csv
 
