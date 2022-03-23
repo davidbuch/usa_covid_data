@@ -1,7 +1,4 @@
-library(lubridate)
-library(readxl)
-
-vaccines <- read.csv("data/us_state_vaccinations.csv")
+vaccines <- read.csv("data/raw_data/us_state_vaccinations.csv")
 vaccines$people_vaccinated[is.na(vaccines$people_vaccinated)] <- 0
 
 vaccines$date <- ymd(vaccines$date)
@@ -52,6 +49,5 @@ for(k in 1:K){
 }
 colnames(vmat) <- us_states
 rownames(vmat) <- as.character.Date(weeks)
-#matplot(vmat, type = "l")
 
-
+write.csv(vmat, "data/clean_data/covid_vaccinations.csv")

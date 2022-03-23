@@ -1,4 +1,5 @@
-nyt_states <- read.csv("data/us-states.csv")
+library(lubridate)
+nyt_states <- read.csv("data/raw_data/us-states.csv")
 nyt_states$deaths[is.na(nyt_states$deaths)] <- 0
 
 nyt_states$date <- ymd(nyt_states$date)
@@ -103,4 +104,7 @@ for(k in 1:K){
 colnames(cmat) <- us_states
 rownames(cmat) <- as.character.Date(weeks)
 
-T_1 <- apply(cmat,2,function(cvec) match(TRUE, cvec > 0))
+#T_1 <- apply(cmat,2,function(cvec) match(TRUE, cvec > 0))
+
+write.csv(cmat, "data/clean_data/covid_cases.csv")
+write.csv(dmat, "data/clean_data/covid_deaths.csv")

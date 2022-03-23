@@ -108,7 +108,7 @@ usa_covid_data:
 
 ### 3. Instructions for reproducing the cleaned data
 
-Once the R program and all necessary add-on pacakges are installed, run "scripts/master_script.R" with an R interpreter. This will call data cleaning R scripts inside the "scripts/processing_scripts/" directory, which load data from the "data/raw_data/" directory and then save the cleaned data in "data/clean_data/".
+Once the R program and all necessary add-on pacakges are installed, open an R interpreter and set the working directory to the top directory of this repository, and run "scripts/master_script.R". This will call data cleaning R scripts inside the "scripts/processing_scripts/" directory, which load data from the "data/raw_data/" directory and save cleaned data in "data/clean_data/".
 
 ## License
 
